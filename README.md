@@ -1,8 +1,6 @@
 # lume-dataview
 (DEVELOPMENT NOT STARTED) A [lume](https://lume.land/) plugin that transforms [dataview](https://github.com/blacksmithgu/obsidian-dataview/tree/master/src) queries to enhanced [search](https://lume.land/plugins/search/) calls. 
 
-Primarily made for use in tandem with [Vento](https://vento.js.org), but I intend to make it customizable enough to use any template engine. Don't get your hopes up though.
-
 ## Features
 
 ## Implementation 
@@ -25,3 +23,5 @@ Actually now I have come up with multiple ideas, so I migh have to rename the re
 - [ ] List inside tables
 - [ ] Objects inside tables
 - [ ] Nested objects 
+
+## Examples
