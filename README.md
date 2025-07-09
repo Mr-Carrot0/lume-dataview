@@ -1,5 +1,5 @@
 # lume-dataview
-(DEVELOPMENT NOT STARTED) A [lume](https://lume.land/) plugin that transforms [dataview](https://github.com/blacksmithgu/obsidian-dataview/tree/master/src) queries to enhanced [search](https://lume.land/plugins/search/) calls. 
+(DEVELOPMENT NOT STARTED) A [lume](https://lume.land/) [plugin](https://lume.land/docs/configuration/install-plugins/) that transforms [dataview](https://github.com/blacksmithgu/obsidian-dataview/tree/master/src) queries to enhanced [search](https://lume.land/plugins/search/) calls. 
 
 ## Features
 
