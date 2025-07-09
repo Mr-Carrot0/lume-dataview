@@ -7,15 +7,15 @@ Primarily made for [Vento](https://vento.js.org), but I intend to make it custom
 
 ### Roadmap
 
-- Tokenizing of queries
-- Parsing of tokens
-- Transforming parsed data into `search.pages` calls. May also use `search.values`, `search.data` and perhaps even `search.files`
-- Vento support
-- Custom Lume plugin for easy use
-- Tables 
-- Lists
-- Nested lists
-- List inside tables
-- Objects inside tables
-- Nested objects 
-- Nunjucks support 
+- [ ] Tokenizing of queries
+- [ ] Parsing of tokens
+- [ ] Transforming parsed data into `search.pages` calls. May also use `search.values`, `search.data` and perhaps even `search.files`
+- [ ] Vento support
+- [ ] Custom Lume plugin for easy use
+- [ ] Tables 
+- [ ] Lists
+- [ ] Nested lists
+- [ ] List inside tables
+- [ ] Objects inside tables
+- [ ] Nested objects 
+- [ ] Nunjucks support 
