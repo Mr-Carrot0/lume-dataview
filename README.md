@@ -26,4 +26,4 @@ Actually now I have come up with multiple ideas, so I migh have to rename the re
 
 1. (original) Hijack markdown.rules.&lt;codeblock&gt; to completely change the behavior if lang="dataview". 
 2. Use `site.process([".html"],()=>...)` and generate HTML from there
-3. Use a component somehow (would eliminate the need for multiple syntaxes for different template engines and remove much of the complexity). Maybe there's a way to pre-process files? 
+3. Use a component somehow (would eliminate the need for multiple syntaxes for different template engines and remove much of the complexity). Maybe there's a way to pre-process files? [Oh yes](https://lume.land/docs/core/processors/#preprocess) 
