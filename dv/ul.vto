@@ -1,0 +1,12 @@
+<ul>
+{{ if Array.isArray(iter)}} 
+	{{ for item of iter }} 
+    <li>
+    {{- if typeof item === "object" - }} 
+      {{ comp.dv.ul({iter:item})}}
+      {{ else }} {{ item }} 
+      {{ /if -}} 
+    </li>
+  {{ /for }} 
+{{ /if }} 
+<ul>
