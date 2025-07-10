@@ -1,6 +1,6 @@
 <ul>
 {{ if Array.isArray(iter)}} 
-	{{ for item of iter }} 
+  {{ for item of iter }} 
     <li>
     {{- if typeof item === "object" - }} 
       {{ comp.dv.ul({iter:item})}}
