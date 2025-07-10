@@ -2,9 +2,9 @@
 {{ if Array.isArray(iter)}} 
   {{ for item of iter }} 
     <li>
-    {{- if typeof item === "object" - }} 
-      {{ comp.dv.ul({iter:item})}}
-      {{ else }} {{ item }} 
+      {{- if typeof item === "object" - }} 
+        {{ comp.dv.ul({iter:item})}}
+        {{ else }} {{ item }} 
       {{ /if -}} 
     </li>
   {{ /for }} 
