@@ -1,4 +1,5 @@
-<ul>
+{{set type}}
+<{{type"ul"}}>
   {{- for page in search[method](query) }} 
 		{{- set res = fn(page) }} 
     <li>
