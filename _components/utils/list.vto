@@ -3,7 +3,7 @@
 {{ if Array.isArray(iter) }} 
   {{ for item of iter }} 
     <li>
-      {{- if typeof item === "object" -}} 
+      {{- if item |> isObj -}} 
         {{ comp.utils.list({iter:item})}}
         {{ else }} 
           {{ item }} 
@@ -13,7 +13,7 @@
 {{ else }}
   {{ for key, value of iter }}
   <li>{{key}}: 
-    {{ if typeof value === "object"}}
+    {{ if value |> isObj}}
       {{- comp.utils.list({iter:value}) }}
     {{ else }}
       {{value}}
