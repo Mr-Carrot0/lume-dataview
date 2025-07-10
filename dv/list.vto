@@ -1,5 +1,16 @@
 <ul>
   {{- for page in search[method](query) }} 
-    <li>{{ fn(page) }}</li>
+		{{- set res = fn(page) }} 
+    <li>
+{{ if typeof res === "object" }}
+  {{ if Array.isArray(res) }} 
+	  {{ comp.dv.ul({arr:res}) }}
+  {{ else }} 
+    {{  }} 
+  {{ /if}} 
+{{ else }} 
+	{{ res }}
+{{ /if }} 
+		</li>
   {{ /for -}} 
 </ul>
