@@ -1,11 +1,11 @@
-{{set type}}
-<{{type"ul"}}>
+{{set listType ??= "ul"}}
+<{{type}}>
   {{- for page in search[method](query) }} 
 		{{- set res = fn(page) }} 
     <li>
 {{ if typeof res === "object" }}
   {{ if Array.isArray(res) }} 
-	  {{ comp.dv.ul({iter:res}) }}
+	  {{ comp.utils.list({iter:res}) }}
   {{ else }} 
     {{  }} 
   {{ /if}} 
@@ -14,4 +14,4 @@
 {{ /if }} 
 		</li>
   {{ /for -}} 
-</ul>
+</{{type}}>
