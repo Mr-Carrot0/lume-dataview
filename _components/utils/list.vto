@@ -1,13 +1,24 @@
 {{set listType ??= "ul"}}
 <{{listType}}>
-{{ if Array.isArray(iter)}} 
+{{ if Array.isArray(iter) }} 
   {{ for item of iter }} 
     <li>
-      {{- if typeof item === "object" - }} 
-        {{ comp.dv.ul({iter:item})}}
-        {{ else }} {{ item }} 
+      {{- if typeof item === "object" -}} 
+        {{ comp.utils.list({iter:item})}}
+        {{ else }} 
+          {{ item }} 
       {{ /if -}} 
     </li>
   {{ /for }} 
+{{ else }}
+  {{ for key, value of iter }}
+  <li>{{key}}: 
+    {{ if typeof value === "object"}}
+      {{- comp.utils.list({iter:value}) }}
+    {{ else }}
+      {{value}}
+    {{- /if -}}
+      </li>
+  {{ /for }}
 {{ /if }} 
 <{{listType}}>
