@@ -1,4 +1,5 @@
-<ul>
+{{set listType ??= "ul"}}
+<{{listType}}>
 {{ if Array.isArray(iter)}} 
   {{ for item of iter }} 
     <li>
@@ -9,4 +10,4 @@
     </li>
   {{ /for }} 
 {{ /if }} 
-<ul>
+<{{listType}}>
