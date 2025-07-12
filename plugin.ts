@@ -1,9 +1,11 @@
 export interface Options{} 
-export function dataview(opt:Options) {
-  
 
-return (site: Site)=>{
-  site.filter("isObj",(value)=>typeof value === "object");
-  return site;
-};
+export const defaults = {} 
+  
+export default function dataview(opt: Partial<Options>) {
+  const options = merge(defaults, opt) 
+  return (site: Site)=>{
+	  site.filter("isObj",(value)=>typeof value === "object");
+	  return site;
+	};
 } 
