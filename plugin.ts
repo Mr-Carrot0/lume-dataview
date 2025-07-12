@@ -1,4 +1,6 @@
-export interface Options{} 
+import { merge } from "lume/core/utils/object.ts";
+
+export interface Options {} 
 
 export const defaults = {} 
   
