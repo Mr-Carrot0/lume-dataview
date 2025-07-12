@@ -1,4 +1,9 @@
-function mues(site: Site){
+export interface Options{} 
+export function dataview(opt:Options) {
+  
+
+return (site: Site)=>{
   site.filter("isObj",(value)=>typeof value === "object");
   return site;
-}
+};
+} 
