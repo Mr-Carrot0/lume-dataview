@@ -2,16 +2,16 @@
 {{ for key, item of iter }}
 <li>
   {{ if item |> isObj }}
-    
-    {{ if item |> isArr }}
-      {{ comp[path].ul({iter:item, path}) }}
-    {{ else }}
+    {{ if !(item |> isArr) }}
       {{key}}:
     {{ /if }}
+    {{ comp[path].ul({iter:item, path}) }}
   {{ else }}
-    
+    {{item}}
+  {{ /if }}
 </li>
 /// EOF
+{{#
 {{ if Array.isArray(iter) }} 
   {{ for item of iter }} 
     <li>
@@ -34,3 +34,4 @@
   {{ /for }}
 {{ /if }} 
 <ul>
+#}}
