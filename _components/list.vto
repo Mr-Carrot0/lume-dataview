@@ -1,5 +1,17 @@
-{{set listType ??= "ul"}}
-<{{listType}}>
+<ul>
+{{ for key, item of iter }}
+<li>
+  {{ if item |> isObj }}
+    
+    {{ if item |> isArr }}
+      {{ comp[path].ul({iter:item, path}) }}
+    {{ else }}
+      {{key}}:
+    {{ /if }}
+  {{ else }}
+    
+</li>
+/// EOF
 {{ if Array.isArray(iter) }} 
   {{ for item of iter }} 
     <li>
@@ -21,4 +33,4 @@
       </li>
   {{ /for }}
 {{ /if }} 
-<{{listType}}>
+<ul>
