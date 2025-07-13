@@ -1,17 +1,21 @@
 <ul>
-{{ for key, item of iter }}
-<li>
-  {{ if item |> isObj }}
-    {{ if !(item |> isArr) }}
-      {{key}}:
-    {{ /if }}
-    {{ comp[path].ul({iter:item, path}) }}
-  {{ else }}
-    {{item}}
-  {{ /if }}
-</li>
-/// EOF
-{{#
+  {{ for key, item of iter }}
+    <li>
+      {{ if item |> isObj }}
+        {{ if !(item |> isArr) }}
+          {{key}}:
+        {{ /if }}
+        {{ comp[path].ul({iter:item, path}) }}
+      {{ else if typeof item === "function"}}
+        {{ "<function>" |> escape }}
+      {{ else }}
+        {{ item }}
+      {{ /if }}
+    </li>
+  {{ /for }}
+</ul>
+
+{{# EOF
 {{ if Array.isArray(iter) }} 
   {{ for item of iter }} 
     <li>
