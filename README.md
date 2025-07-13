@@ -17,12 +17,12 @@ Actually now I have come up with multiple ideas, so I migh have to rename the re
 - [ ] Parsing of tokens
 - [ ] Transforming parsed data into `search.pages` calls. May also use `search.values`, `search.data` and perhaps even `search.files`
 - [ ] Custom Lume components for easy use
-- [ ] Table component 
-- [ ] List component
-- [ ] nesting
-	- [ ] Nested lists
-	- [ ] List inside tables
-	- [ ] Objects inside tables
-	- [ ] Nested objects 
+	- [ ] List component 
+	- [ ] Table component
+		- [ ] nesting
+			- [ ] Nested lists
+			- [ ] List inside tables
+			- [ ] Objects inside tables
+			- [ ] Nested objects 
 
 ## Examples
