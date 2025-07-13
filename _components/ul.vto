@@ -9,7 +9,7 @@
       {{ else if typeof item === "function"}}
         {{ "<function>" |> escape }}
       {{ else }}
-        {{ item }}
+        {{ item }} {{# perhaps do a [Deno.inspect](https://docs.deno.com/api/deno/~/Deno.inspect) instead? #}}
       {{ /if }}
     </li>
   {{ /for }}
