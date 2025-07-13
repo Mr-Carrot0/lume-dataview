@@ -9,7 +9,7 @@ export const defaults = {
 }
 
 const components = [
-  "list.vto"
+  "ul.vto"
 ]
 
 export default function dataview(opt: Partial<Options>) {
